@@ -1,0 +1,55 @@
+#landing{
+	test-align:right;
+}
+
+#landing #title{
+	border:none;
+}
+
+#numberLive{
+	margin-left: -1px;
+	margin-bottom: -15px;
+}
+
+#theme{
+	margin-bottom: 5px;
+}
+
+#dateLive{
+
+}
+#spanDateLive{
+	font-size: 1.3rem;
+}
+#textLanding{
+
+}
+
+#linkLive{
+	display:inline-block;
+}
+#content{
+	height: calc(80% - 80px);
+}
+
+@media screen and (max-width:840px){
+	#content{
+		margin: 16px;
+	}
+}
+@media screen and (max-width:640px){
+	#content{
+		margin: 5px;
+		height:auto;
+	}
+	#theme{
+		font-size: 2em;
+	}
+	#dateLive{
+		max-width:100%;
+	}
+	#spanDateLive{
+		font-size: 0.5em;
+		overflow:hidden;
+	}
+}

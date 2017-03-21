@@ -2,6 +2,7 @@
 
 function get_NavBar(){
 	session_start();
+	include "ressource/environnement.php";
 $nav =  "
 <nav id='nav'>
 	<div class='container'>
@@ -15,7 +16,7 @@ if (!$_SESSION['pseudo']){
 else { 
 	$nav .= "<a href='user/disconnect.php' class='button -round pull-right -line-primary pull-right'>Se déconnecter</a>";
 }
-$nav .= "<a href='https://ciconia.io/ask' class='link pull-right'>Live</a>
+$nav .= "<a href='".$live."' class='link pull-right'>Live</a>
 <a href='https://ciconia.io' class='link pull-right'>Accueil</a>
 </div>
 </div>

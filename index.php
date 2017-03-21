@@ -22,14 +22,9 @@ session_start();
 	<meta name="keywords" content="grossesse, timeline"/>
 
 	<link rel="icon" href="assets/imgs/favicon.ico">
-	<script type="text/javascript" src="ressources/jquery.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/content.css" type="text/css" />
-	<link rel="stylesheet" href="css/modal.css" type="text/css" />
-	<link rel="stylesheet" href="css/navbar.css" type="text/css" />
-	<link rel="stylesheet" href="css/footer.css" type="text/css" />
-	<link rel="stylesheet" href="css/sub-nav.css" type="text/css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+	<script type="text/javascript" async src="script.js"></script>
+	 	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 
 	</head>
 	<body>
@@ -38,18 +33,22 @@ session_start();
 	<?php echo  get_sendMailPopup();?>
 	<?php echo  get_NavBar();?>
 	
-		<div style="height: calc(100% - 100px)" class="center" id="content">
+		<div  class="center" id="content">
 	<div class="center-wrapper">
-			<div style="text-align:left;" class="container">
-				<div style="border: none" class="tag -square -uppercase"><span style="margin-left: -1px;margin-bottom: -15px;">Premier Live</span></div>
-	<h2 style="margin-bottom: 5px" class="bold _text-primary">Thème : l'accouchement</h2>
-	<div class="tag -square -uppercase"><span style="font-size: 1.3rem" class="bold">Rendez vous le jeudi 23 mars à 21 heures</span></div>
-	<p class="lead">Ciconia vous invite à poser toutes vos questions au <a target="_blank" href="https://www.linkedin.com/in/amina-yamgnane-7125a658/"> Docteur Amina Yamgnane</a>.<br/> Elle répondra aux <b>10 questions</b> qui ont obtenu le plus de votes !</p>
-<p> Le docteur <b>Amina Yamgnane</b> est gynécologue obstétricienne, spécialisée dans la prise en charge des grossesses à haut risque maternel et foetal. Chef de Service de la Maternité à American Hospital of Paris</p>
-				<a class="button -line-primary -round -big" href="/ask">À vos claviers Mesdames</a>
-	</div>
-	</div>
+			<div id="landing" class="container">
+				<div id="title" class="tag -square -uppercase">
+					<span id="numberLive">Premier Live</span>
+				</div>
+				<h2 id="theme" class="bold _text-primary">Thème : l'accouchement</h2>
+				<div id="dateLive" class="tag -square -uppercase">
+					<span id="spanDateLive" class="bold">Rendez vous le jeudi 23 mars à 21 heures</span>
+				</div>
+				<p id="textLanding" class="lead">Ciconia vous invite à poser toutes vos questions au <a target="_blank" href="https://www.linkedin.com/in/amina-yamgnane-7125a658/"> Docteur Amina Yamgnane</a>.<br/> Elle répondra aux <b>10 questions</b> qui ont obtenu le plus de votes !</p>
+				<p> Le docteur <b>Amina Yamgnane</b> est gynécologue obstétricienne, spécialisée dans la prise en charge des grossesses à haut risque maternel et foetal. Chef de Service de la Maternité à American Hospital of Paris</p>
+				<a id="linkLive" class="button -line-primary -round -big" href="/ask">À vos claviers Mesdames</a>
 			</div>
+	</div>
+		</div>
 		</div>
 		<?php echo get_footer(); ?>
 </body>
@@ -61,3 +60,9 @@ session_start();
  ga('create', 'UA-93913285-1', 'auto');
  ga('send', 'pageview'); 
 </script>
+	<link rel="stylesheet" href="css/navbar.css" type="text/css" />
+	<link rel="stylesheet" href="css/sub-nav.css" type="text/css" />
+	<link rel="stylesheet" href="css/footer.css" type="text/css" />
+	<link rel="stylesheet" href="css/content.css" type="text/css" />
+	<link rel="stylesheet" href="css/modal.css" type="text/css" />
+	<link rel="stylesheet" href="css/landing.css" type="text/css" />
