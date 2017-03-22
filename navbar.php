@@ -7,7 +7,7 @@ $nav =  "
 <nav id='nav'>
 	<div class='container'>
 		<div class='row'>
-		<div class='twelve col'>
+		<div id='NavButton' class='twelve col'>
 		<a id='logo' class='pull-left'></a>";
 if (!$_SESSION['pseudo']){
 	$nav .= "<a class='button -round pull-right -line-primary open-subscribe-modal'>S'inscrire</a>
@@ -16,7 +16,7 @@ if (!$_SESSION['pseudo']){
 else { 
 	$nav .= "<a href='user/disconnect.php' class='button -round pull-right -line-primary pull-right'>Se déconnecter</a>";
 }
-$nav .= "<a href='".$live."' class='link pull-right'>Live</a>
+$nav .= "<a href='/ask' class='link pull-right'>Live</a>
 <a href='https://ciconia.io' class='link pull-right'>Accueil</a>
 </div>
 </div>

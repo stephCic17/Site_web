@@ -20,10 +20,11 @@ session_start();
 	<meta name="author" content="Ciconia"/>
 	<meta name="description" content="Ciconia et votre grossesse"/>
 	<meta name="keywords" content="grossesse, timeline"/>
-
+	<script type="text/javascript"  src="ressources/needJquery.js"></script>
+	<script type="text/javascript" async src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 	<link rel="icon" href="assets/imgs/favicon.ico">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 	<script type="text/javascript" async src="script.js"></script>
+
 	 	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 
 	</head>
@@ -34,18 +35,28 @@ session_start();
 	<?php echo  get_NavBar();?>
 	
 		<div  class="center" id="content">
-	<div class="center-wrapper">
-			<div id="landing" class="container">
-				<div id="title" class="tag -square -uppercase">
-					<span id="numberLive">Premier Live</span>
+			<div id="landingPage" class="center-wrapper">
+				<div id="landing" class="container">
+					<div id="title" class="tag -square -uppercase">
+						<span id="numberLive">Premier Live</span>
+					</div>
+					<h2 id="theme" class="bold _text-primary">Thème : l'accouchement</h2>
+					<div id="dateLive" class="tag -square -uppercase">
+						<span style="padding:10px" class="bold">Jeudi 23 mars à 21 heures</span>
+					</div>
+					<p id="textLanding" class="lead">Ciconia vous invite à poser toutes vos questions au <a target="_blank" href="https://www.linkedin.com/in/amina-yamgnane-7125a658/"> Docteur Amina Yamgnane</a>.<br/> Elle répondra aux <b>10 questions</b> qui ont obtenu le plus de votes !</p>
 				</div>
-				<h2 id="theme" class="bold _text-primary">Thème : l'accouchement</h2>
-				<div id="dateLive" class="tag -square -uppercase">
-					<span id="spanDateLive" class="bold">Rendez vous le jeudi 23 mars à 21 heures</span>
+				<div id="doctorPresentation" class="container">
+					<div id="doctorPicture" class="one col">
+						<img style="width:60px;border-radius:100%" src="/assets/imgs/amina.jpg"/>
+					</div>
+					<div class="five col">
+					    <p> Le docteur <b>Amina Yamgnane</b> est gynécologue obstétricienne, spécialisée dans la prise en charge des grossesses à haut risque maternel et foetal.</p>
+					</div>
 				</div>
-				<p id="textLanding" class="lead">Ciconia vous invite à poser toutes vos questions au <a target="_blank" href="https://www.linkedin.com/in/amina-yamgnane-7125a658/"> Docteur Amina Yamgnane</a>.<br/> Elle répondra aux <b>10 questions</b> qui ont obtenu le plus de votes !</p>
-				<p> Le docteur <b>Amina Yamgnane</b> est gynécologue obstétricienne, spécialisée dans la prise en charge des grossesses à haut risque maternel et foetal. Chef de Service de la Maternité à American Hospital of Paris</p>
-				<a id="linkLive" class="button -line-primary -round -big" href="/ask">À vos claviers Mesdames</a>
+				<div>
+					<a class="button -primary -round -big" href="/ask"><span>Posez-vos questions dès maintenant ICI</span></a>
+				</div>
 			</div>
 	</div>
 		</div>
@@ -60,9 +71,7 @@ session_start();
  ga('create', 'UA-93913285-1', 'auto');
  ga('send', 'pageview'); 
 </script>
-	<link rel="stylesheet" href="css/navbar.css" type="text/css" />
-	<link rel="stylesheet" href="css/sub-nav.css" type="text/css" />
-	<link rel="stylesheet" href="css/footer.css" type="text/css" />
-	<link rel="stylesheet" href="css/content.css" type="text/css" />
-	<link rel="stylesheet" href="css/modal.css" type="text/css" />
-	<link rel="stylesheet" href="css/landing.css" type="text/css" />
+	<link rel="stylesheet" href="css/composant.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/sub-nav.scss" type="text/css" />
+
+
